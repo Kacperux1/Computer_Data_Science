@@ -11,6 +11,10 @@ test_data[columns_to_convert] = test_data[columns_to_convert].astype(float)
 train_data["species"] = train_data["species"].astype(int)
 test_data["species"] = test_data["species"].astype(int)
 
-lista = algorithm.custom_knn(1, train_data, test_data)
+outcomes = []
+for i in range(1, 16):
+    outcomes.append(algorithm.custom_knn(i, train_data, test_data))
 
-print(lista)
+
+
+best_result = max(outcomes, key=lambda x: x["percentage"])

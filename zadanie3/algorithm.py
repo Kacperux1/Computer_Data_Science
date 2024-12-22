@@ -47,7 +47,11 @@ def custom_knn(k, train_data, test_data):
                 predictions.append(result)
                 not_done = False
 
-    return predictions
+
+    matrix_percentage = confusion_matrix(test_data.species, predictions)
+    matrix_percentage["predictions"] = predictions
+
+    return matrix_percentage
 
 
 
@@ -58,3 +62,17 @@ def euclidean_distance(value1, value2):
     for i in range(len(value1)-1):
         temp += (value1[i] - value2[i]) ** 2
     return temp
+
+def confusion_matrix(real, predicted):
+    matrix = [[0, 0, 0],
+              [0, 0, 0],
+              [0, 0, 0]]
+    correct = 0
+
+    for real_group, predicted_group in zip(real, predicted):
+        matrix[real_group][predicted_group] += 1
+        if real_group == predicted_group:
+            correct += 1
+
+    percentage = correct/(len(real))
+    return {"confusion matrix": matrix, "percentage": percentage}
