@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ca6475-e00e-4329-b686-62a70fae7900" name="Changes" comment="dodanie litery ł gdzie nie gdzie">
+      <change afterPath="$PROJECT_DIR$/zadanie3/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/histogram_petal_length.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/histogram_petal_width.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/histogram_sepal_len.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/histogram_sepal_width.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pudelkowy_petal_length.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pudelkowy_petal_width.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pudelkowy_sepal_len.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pudelkowy_sepal_width.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/regresja1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/regresja2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/regresja3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/regresja4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/regresja5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/regresja6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadanie2/algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/zadanie2/algorithm.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +98,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
       </set>
     </attachedChunks>
   </component>
@@ -95,6 +113,7 @@
       <updated>1729774795959</updated>
       <workItem from="1731937608859" duration="88000" />
       <workItem from="1732041049269" duration="41794000" />
+      <workItem from="1734874319403" duration="904000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -340,7 +359,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="dodanie litery ł gdzie nie gdzie" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CDA_task1$main.coverage" NAME="main Coverage Results" MODIFIED="1733300796276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zadanie2" />
+    <SUITE FILE_PATH="coverage/CDA_task1$main.coverage" NAME="main Coverage Results" MODIFIED="1734720045357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zadanie2" />
     <SUITE FILE_PATH="coverage/CDA_task1$formulas2.coverage" NAME="formulas2 Coverage Results" MODIFIED="1732658506003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zadanie2" />
     <SUITE FILE_PATH="coverage/CDA_task1$formulas.coverage" NAME="formulas Coverage Results" MODIFIED="1730385249880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CDA_task1$main2.coverage" NAME="main2 Coverage Results" MODIFIED="1733298985987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zadanie2" />
