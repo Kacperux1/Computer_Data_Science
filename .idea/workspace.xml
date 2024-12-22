@@ -4,25 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9ca6475-e00e-4329-b686-62a70fae7900" name="Changes" comment="dodanie litery ł gdzie nie gdzie">
-      <change afterPath="$PROJECT_DIR$/zadanie3/main.py" afterDir="false" />
+    <list default="true" id="b9ca6475-e00e-4329-b686-62a70fae7900" name="Changes" comment="dodanie danych do zadania 3">
+      <change afterPath="$PROJECT_DIR$/zadanie3/algorithm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/histogram_petal_length.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/histogram_petal_width.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/histogram_sepal_len.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/histogram_sepal_width.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pudelkowy_petal_length.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pudelkowy_petal_width.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pudelkowy_sepal_len.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pudelkowy_sepal_width.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/regresja1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/regresja2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/regresja3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/regresja4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/regresja5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/regresja6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zadanie2/algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/zadanie2/algorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadanie3/data3_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/zadanie3/data3_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadanie3/data3_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/zadanie3/data3_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadanie3/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/zadanie3/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +79,7 @@
       <recent name="C:\Users\ophth\PycharmProjects\CDA_task1\zadanie2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ophth\PycharmProjects\CDA_task1\zadanie3" />
       <recent name="C:\Users\ophth\PycharmProjects\CDA_task1\zadanie2" />
     </key>
   </component>
@@ -113,7 +101,7 @@
       <updated>1729774795959</updated>
       <workItem from="1731937608859" duration="88000" />
       <workItem from="1732041049269" duration="41794000" />
-      <workItem from="1734874319403" duration="904000" />
+      <workItem from="1734874319403" duration="12809000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -315,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733300344647</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="dodanie danych do zadania 3">
+      <option name="closed" value="true" />
+      <created>1734876854658</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1734876854658</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,10 +352,11 @@
     <MESSAGE value="minor fixes" />
     <MESSAGE value="zmiana wyswietlania wykresów, dodanie w algorytmie powtarzania aby dostac najlepszy wynik" />
     <MESSAGE value="dodanie litery ł gdzie nie gdzie" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie litery ł gdzie nie gdzie" />
+    <MESSAGE value="dodanie danych do zadania 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie danych do zadania 3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CDA_task1$main.coverage" NAME="main Coverage Results" MODIFIED="1734720045357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zadanie2" />
+    <SUITE FILE_PATH="coverage/CDA_task1$main.coverage" NAME="main Coverage Results" MODIFIED="1734900588923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zadanie3" />
     <SUITE FILE_PATH="coverage/CDA_task1$formulas2.coverage" NAME="formulas2 Coverage Results" MODIFIED="1732658506003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zadanie2" />
     <SUITE FILE_PATH="coverage/CDA_task1$formulas.coverage" NAME="formulas Coverage Results" MODIFIED="1730385249880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CDA_task1$main2.coverage" NAME="main2 Coverage Results" MODIFIED="1733298985987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zadanie2" />

@@ -1,0 +1,60 @@
+
+
+def custom_knn(k, train_data, test_data):
+    predictions = []
+
+    #przechodzimy przez wszystkie obiekty ze zbioru testowego aby znaleźć im dopasowanie
+    for new_obj in (test_data.values):
+        printing = True
+        closest_points = []
+        distances = []
+
+        #wyliczamy odleglosc obiektu ze zbioru testowego do kazdego obiektu ze zbioru treningowego i zapisujemy jego index
+        for i, obj in enumerate(train_data.values):  #values konwertuje wiersze na tablice NumPy
+            distances.append([euclidean_distance(obj, new_obj), i])
+
+        #sortujemy liste
+        distances.sort()
+
+        #z posortowanej listy wybieramy pierwsze tyle punktów dla ilu k jest algorytm
+        for i in range(k):
+            closest_points.append(train_data.iloc[distances[i][1]].to_dict())
+
+        not_done=True
+        while(not_done):
+            group = [0, 0, 0]
+            result = 0
+            for obj in closest_points:
+                if obj["species"] == 0:
+                    group[0] += 1
+                    result = 0
+                elif obj["species"] == 1:
+                    group[1] += 1
+                    result = 1
+                else:
+                    group[2] += 1
+                    result = 2
+
+            maximum = max(group)
+            is_only = 0
+            for i in range(len(group)):
+                if group[i] == maximum:
+                    is_only += 1
+
+            if is_only!=1:
+                closest_points.pop()
+            else:
+                predictions.append(result)
+                not_done = False
+
+    return predictions
+
+
+
+def euclidean_distance(value1, value2):
+    temp = 0
+    if len(value1) != len(value2):
+        return float('inf')
+    for i in range(len(value1)-1):
+        temp += (value1[i] - value2[i]) ** 2
+    return temp
