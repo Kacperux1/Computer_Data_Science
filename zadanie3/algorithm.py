@@ -4,8 +4,7 @@ def custom_knn(k, train_data, test_data):
     predictions = []
 
     #przechodzimy przez wszystkie obiekty ze zbioru testowego aby znaleźć im dopasowanie
-    for new_obj in (test_data.values):
-        printing = True
+    for new_obj in test_data.values:
         closest_points = []
         distances = []
 
@@ -20,23 +19,23 @@ def custom_knn(k, train_data, test_data):
         for i in range(k):
             closest_points.append(train_data.iloc[distances[i][1]].to_dict())
 
+        #pętla while bedzie dizłała tak długo aż osiągniemy jednoznaczny wynik przyporządkowania do klasy
         not_done=True
-        while(not_done):
+        while not_done:
             group = [0, 0, 0]
-            result = 0
+            #zliczamy ile "głosów" jest dla poszczególnych klas
             for obj in closest_points:
                 if obj["species"] == 0:
                     group[0] += 1
-                    result = 0
                 elif obj["species"] == 1:
                     group[1] += 1
-                    result = 1
                 else:
                     group[2] += 1
-                    result = 2
-
+            #sprawdzamy
             maximum = max(group)
             is_only = 0
+            result = 0
+            #sprawdzamy czy grupa
             for i in range(len(group)):
                 if group[i] == maximum:
                     is_only += 1
@@ -44,6 +43,9 @@ def custom_knn(k, train_data, test_data):
             if is_only!=1:
                 closest_points.pop()
             else:
+                for i in range(len(group)):
+                    if group[i] == maximum:
+                        result = i
                 predictions.append(result)
                 not_done = False
 
