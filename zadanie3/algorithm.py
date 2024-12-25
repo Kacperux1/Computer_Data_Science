@@ -1,4 +1,5 @@
-
+import pandas as pd
+import matplotlib.pyplot as plt
 
 def custom_knn(k, train_data, test_data):
     predictions = []
@@ -78,3 +79,58 @@ def confusion_matrix(real, predicted):
 
     percentage = correct/(len(real))
     return {"confusion matrix": matrix, "percentage": percentage}
+
+def repeat(train_data, test_data):
+    outcomes = []
+    percentages = []
+    best_percentage = 0
+    best_k = 0
+    best_outcome = {}
+    for i in range(1, 16):
+        outcomes.append(custom_knn(i, train_data, test_data))
+        percentage = float(outcomes[i - 1]["percentage"])
+
+        if percentage > best_percentage:
+            best_percentage = percentage
+            best_k = i
+            best_outcome = outcomes[i - 1]
+
+    for obj in outcomes:
+        percentages.append(obj["percentage"] * 100)
+
+    return {"outcomes": outcomes, "percentages": percentages, "best outcome": best_outcome, "best percentage": best_percentage, "best k": best_k}
+
+def print_data_and_draw(train_data, test_data, kolumn1, kolumn2):
+    # robimy nowe train_data zawierające tylko dwie cechy i gatunek naraz
+    train_data_dual = train_data[[kolumn1, kolumn2, "species"]].values
+    columns = [kolumn1, kolumn2, "species"]
+    train_data_dual = pd.DataFrame(train_data_dual, columns=columns)
+    # musimy zamienić gatunek na int bo się kopiował jako float
+    train_data_dual["species"] = train_data_dual["species"].astype(int)
+
+    # To samo co dla train_data robimy dla  test_data
+    test_data_dual = test_data[[kolumn1, kolumn2, "species"]].values
+    columns = [kolumn1, kolumn2, "species"]
+    test_data_dual = pd.DataFrame(test_data_dual, columns=columns)
+    test_data_dual["species"] = test_data_dual["species"].astype(int)
+
+    # wywołujemy nasz algorytm
+    result = repeat(train_data_dual, test_data_dual)
+
+    # Robimy wykres procenwó w zaleznosci od k dla dwoch cech
+    plt.bar(range(1, 16), result["percentages"], color='blue', label="Procent")
+    plt.ylim(70, 102)
+    plt.xticks(range(1, 16))
+    plt.title("Sumaryczny wynik klasyfikacji w zależności od k")
+    plt.xlabel("k (liczba sąsiadów)")
+    plt.ylabel("Procent [%]")
+    plt.savefig((kolumn1 + "_" + kolumn2 + ".png"), dpi=300)
+    plt.show()
+
+    print("wyniki dla", kolumn1, "i", kolumn2)
+    best_outcome = result["best outcome"]
+    print("najlepszy sumaryczny wynik klasyfikacji osiągnięto dla k =", result["best k"], " i wynosił on", f"{(result["best percentage"]*100):.2f}", "%")
+    print("Tak prezentuje się matryca błędów dla powyższego k")
+    print(best_outcome["confusion matrix"])
+    print("")
+

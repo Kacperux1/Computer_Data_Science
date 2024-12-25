@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9ca6475-e00e-4329-b686-62a70fae7900" name="Changes" comment="dodanie macierzy pomyłek i procentów">
+    <list default="true" id="b9ca6475-e00e-4329-b686-62a70fae7900" name="Changes" comment="poprawki">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zadanie3/algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/zadanie3/algorithm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zadanie3/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/zadanie3/main.py" afterDir="false" />
@@ -53,25 +53,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.algorithm.executor&quot;: &quot;Run&quot;,
-    &quot;Python.formulas.executor&quot;: &quot;Run&quot;,
-    &quot;Python.formulas2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main2.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;zad2__extended&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ophth/PycharmProjects/CDA_task1/zadanie2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Ini&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.algorithm.executor": "Run",
+    "Python.formulas.executor": "Run",
+    "Python.formulas2.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.main2.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "zad2__extended",
+    "last_opened_file_path": "C:/Users/ophth/PycharmProjects/CDA_task1/zadanie2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ophth\PycharmProjects\CDA_task1\zadanie2" />
@@ -101,7 +101,7 @@
       <workItem from="1732041049269" duration="41794000" />
       <workItem from="1734874319403" duration="21612000" />
       <workItem from="1734911143559" duration="126000" />
-      <workItem from="1734911292105" duration="2998000" />
+      <workItem from="1734911292105" duration="11745000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -327,7 +327,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734907510089</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="początki wykresów">
+      <option name="closed" value="true" />
+      <created>1734914568348</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1734914568348</updated>
+    </task>
+    <task id="LOCAL-00030" summary="poprawki">
+      <option name="closed" value="true" />
+      <created>1734915104609</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1734915104609</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,8 +361,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new file, reading from file fix" />
-    <MESSAGE value="template of the graphs" />
     <MESSAGE value="box plots, not fully correct but present" />
     <MESSAGE value="iimplementation of the pearson coeff and linear regression, wrong data" />
     <MESSAGE value="coeff and corelation plots for all cases" />
@@ -370,12 +384,15 @@
     <MESSAGE value="dodanie danych do zadania 3" />
     <MESSAGE value="dodanie algorytmu knn który chyba nawet działa w miarę" />
     <MESSAGE value="dodanie macierzy pomyłek i procentów" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie macierzy pomyłek i procentów" />
+    <MESSAGE value="początki wykresów" />
+    <MESSAGE value="poprawki" />
+    <option name="LAST_COMMIT_MESSAGE" value="poprawki" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CDA_task1$main.coverage" NAME="main Coverage Results" MODIFIED="1734914000708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zadanie3" />
+    <SUITE FILE_PATH="coverage/CDA_task1$main.coverage" NAME="main Coverage Results" MODIFIED="1735148101180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zadanie3" />
     <SUITE FILE_PATH="coverage/CDA_task1$formulas2.coverage" NAME="formulas2 Coverage Results" MODIFIED="1732658506003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zadanie2" />
     <SUITE FILE_PATH="coverage/CDA_task1$formulas.coverage" NAME="formulas Coverage Results" MODIFIED="1730385249880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CDA_task1$algorithm.coverage" NAME="algorithm Coverage Results" MODIFIED="1735148096582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zadanie3" />
     <SUITE FILE_PATH="coverage/CDA_task1$main2.coverage" NAME="main2 Coverage Results" MODIFIED="1733298985987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zadanie2" />
   </component>
 </project>
