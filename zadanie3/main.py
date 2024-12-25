@@ -22,11 +22,11 @@ plt.title("Sumaryczny wynik klasyfikacji w zależności od k")
 plt.xlabel("k (liczba sąsiadów)")
 plt.ylabel("Procent [%]")
 plt.savefig(("all_four"+".png"), dpi=300)
-plt.show()
+#plt.show()
 
 print("wyniki dla wszystkich 4 cech naraz")
 best_outcome = result["best outcome"]
-print("najlepszy sumaryczny wynik klasyfikacji osiągnięto dla k =", result["best k"], " i wynosił on", f"{(result["best percentage"]*100):.2f}", "%")
+print("najlepszy sumaryczny wynik klasyfikacji osiągnięto dla k =", result["best k"], " i wynosił on", f"{(result["best percentage"]):.2f}", "%")
 print("Tak prezentuje się matryca błędów dla powyższego k")
 print(best_outcome["confusion matrix"])
 print("")
