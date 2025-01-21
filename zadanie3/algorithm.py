@@ -118,7 +118,7 @@ def repeat(train_data, test_data):
     return {"outcomes": outcomes, "percentages": percentages, "best outcome": best_outcome, "best percentage": best_percentage, "best k": best_k}
 
 
-def print_data_and_draw(train_data, test_data, kolumn1, kolumn2):
+def print_data_and_draw(train_data, test_data, kolumn1, kolumn2, percentage):
     # robimy nowe train_data zawierające tylko dwie cechy i gatunek naraz
     train_data_dual = train_data[[kolumn1, kolumn2, "species"]].values
     columns = [kolumn1, kolumn2, "species"]
@@ -140,13 +140,13 @@ def print_data_and_draw(train_data, test_data, kolumn1, kolumn2):
     #Zaczynamy od 70% bo wykresy lepiej wyglądają(słowa Nowaka nie moje) a najniższy wynik procentowy to chyba 72%
     #a kończymy na 102 bo przy 100 to srednio wygladało gdy wynik procentowy był równy 100 bo nie wiadomo było
     #czy to faktycznie już koniec czy te procenty idą w górę jeszcze tylko wykres się skończył
-    plt.ylim(70, 102)
+    plt.ylim(percentage, 102)
     plt.xticks(range(1, 16))
     plt.title("Sumaryczny wynik klasyfikacji w zależności od k")
     plt.xlabel("k (liczba sąsiadów)")
     plt.ylabel("Procent [%]")
     plt.savefig((kolumn1 + "_" + kolumn2 + ".png"), dpi=300)
-    #plt.show()
+    plt.show()
 
     print("wyniki dla", kolumn1, "i", kolumn2)
     best_outcome = result["best outcome"]
