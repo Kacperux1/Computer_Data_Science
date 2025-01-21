@@ -62,7 +62,7 @@ def custom_knn(k, train_data, test_data):
 def euclidean_distance(value1, value2):
     temp = 0
     if len(value1) != len(value2):
-        return float('inf')
+        raise ValueError("different dimensions!")
     for i in range(len(value1)-1):
         temp += (value1[i] - value2[i]) ** 2
     return sqrt(temp)
